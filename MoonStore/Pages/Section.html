@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .accordion {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+        }
+
+            .active, .accordion:hover {
+                background-color: #ccc;
+            }
+
+        .panel {
+            padding: 0 18px;
+            display: none;
+            background-color: white;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Our Depaertment</h2>
+
+    <button class="accordion">Meat Department</button>
+    <div class="panel">
+        <p>It's Offer Various Type Of Meat Such As Lamp Chop , T-Bone Steak , Bacon,...etc <a href="Menus.html#Meat" target="_blank">Click Here For Menu</a> </p>
+    </div>
+
+    <button class="accordion">Sea Food Department</button>
+    <div class="panel">
+        <p>It's Offer Various Type Of Sea Food Like Shrimp , Caviar , Squid,...etc <a href="Menus.html#Sea" target="_blank">Click Here For Menu</a></p>
+    </div>
+
+    <button class="accordion">Health And Beauty</button>
+    <div class="panel">
+        <p>It's Offer Various Type Of Healthy And Beauty Product Like Shampoo , Perfume,...etc <a href="Menus.html#Health" target="_blank">Click Here For Menu</a></p>
+    </div>
+
+    <button class="accordion">Frozen Food</button>
+    <div class="panel">
+        <p>It's Offer All Types Of Frozen Vegatables And Fruits <a href="Menus.html#Frozen" target="_blank">Click Here For Menu</a></p>
+    </div>
+
+    <button class="accordion">Produce</button>
+    <div class="panel">
+        <p>It's Offer All Type Of Fresh Vegatables And Fruits <a href="Menus.html#Produce" target="_blank">Click Here For Menu</a></p>
+    </div>
+
+    <button class="accordion">Dairy</button>
+    <div class="panel">
+        <p>It's Offer All Type Of Fresh Yoghurt , Milk And ....etc <a href="Menus.html#Dairy" target="_blank">Click Here For Menu</a></p>
+    </div>
+
+
+    <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+    </script>
+
+</body>
+</html>
