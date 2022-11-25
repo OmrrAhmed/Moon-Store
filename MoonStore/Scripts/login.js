@@ -10,6 +10,13 @@
         return false;
 
     }
+    else if (user == "Admin" && password == "Admin")
+    {
+        window.location.href = "../Pages/Menus.html";
+        alert("Login Successfully");
+        return false;
+
+    }
 
     else {
         alert("Please Try Again..")
